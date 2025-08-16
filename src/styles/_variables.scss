@@ -1,0 +1,19 @@
+@use 'helpers' as *;
+
+:root {
+  --color-light: #FFFFFF;
+  --color-black: #000000;
+  
+  --font-family: "Inter";
+  
+  --container-width: 1230px; // ширина контейнера
+  --container-padding-x: 15px; // отступы контейнера
+  
+  --transition-duration: 0.2s;
+  
+  --100vw: calc(100vw - var(--scrollbar-width));
+  
+  @include laptop {
+    --container-width: 1280px;
+  }
+}
